@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppointmentPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .footer{
+            width: 100%;
+            bottom:0;
+            position: fixed;
+        }
+</style>
+</head>
+<body>
+
+    <div class="nav-links">
+        <a href="home.html" target="_self"><h2>AutoMob-Mechanic</h2></a>
+        <a href="home.html" target="_self">Home</a><span>&#9474;</span>
+        <a href="services.html" target="_blank">Services</a><span>&#9474;</span>
+        <a href="booking.html"  target="_blank">Booking</a><span>&#9474;</span>
+        <a href="contact@automob.co.in">contact@automob.co.in<i class="fa fa-envelope"></i></a><span>&#9474;</span><span>999 999 9999</span> <i class="fa fa-phone"></i>
+        <hr>
+        
+    </div>
+    <form action="booking-success.html" method="POST">
+        <br><br>
+        <h2>Schedule Your Appointment</h2><br>
+        <label for="date">Appointment Date: </label>
+        <input type="date" id="date" name="date"  required ><br><br>
+        <label for="add">Address: </label>
+        <textarea id="add" name="add" rows="5" cols="50"  required ></textarea><br><br>
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city" placeholder="Mumbai, Pune" required><br><br>
+        <label for="state">State: </label>
+        <input list="states" name="state" id="state" placeholder="Kerala, Maharashtra..." required>
+        <datalist id="states">
+        <option value="Assam">
+        <option value="Bihar">
+        <option value="Gujarat">
+        <option value="Goa">
+        <option  value="etc..">
+        </datalist><br><br>
+        <label for="send">Send Notification: </label>
+        <input type="checkbox" id="send1" name="send1" value="Email">
+        <label for="send1">Email</label>
+        <input type="checkbox" id="send2" name="send2" value="SMS">
+        <label for="send2">SME</label><br><br>
+        <button type="submit" value="submit">Book</button>
+    </form>
+    
+  
+<div class="footer">
+    <hr>
+    <p>Copyright &#169; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+</div> 
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookingPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+     .footer{
+            width: 100%;
+            bottom:0;
+            position: fixed;
+        }
+
+</style>
+</head>
+<body>
+  <div class="main_content">
+    <div class="nav-links">
+        <a href="home.html" target="_self"><h2>AutoMob-Mechanic</h2></a>
+        <a href="home.html" target="_self">Home</a><span>&#9474;</span>
+        <a href="services.html" target="_blank">Services</a><span>&#9474;</span>
+        <a href="booking.html"  target="_blank">Booking</a><span>&#9474;</span>
+        <a href="contact@automob.co.in">contact@automob.co.in<i class="fa fa-envelope"></i></a><span>&#9474;</span><span>999 999 9999</span> <i class="fa fa-phone"></i>
+        <hr><br>
+        <h2>Book Your service</h2>
+        <form action="appointment.html" method="post">
+            <label for="name">Name: </label>
+            <input type="text"  name="name" placeholder="John Daub" pattern="[a-zA-Z]+ [a-zA-Z]+$"required><br><br>
+            <label for="email">Email Id: </label>
+            <input type="email"  name="email" placeholder="john@yahoo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+            <label for="phonenum">Phone Number: </label>
+            <select name="phonenum" id="phonenum">
+                <option value="code" default>code</option>
+                <option value="213">+213</option>
+                <option value="91">+91</option>
+                <option value="244">+244</option>
+                <option value="61">+61</option>
+            </select>
+            <input type="tel"  name="phonenum" placeholder="9823322332" pattern="[0-9]{10}" required><br><br>
+            <label for="service">Select Service: </label>
+            <select name="service" id="service" required>
+                <option value="Preventive Maintenance Service" default>Preventive Maintenance Service</option>
+                <option value="Repair Service">Repair Service</option>
+                <option value="Car Care Service">Car Care Service</option>
+            </select><br><br>
+            <label for="CarMake">Car Make:</label>
+            <input list="CarMakes" name="CarMake" id="CarMake" placeholder="Suzuki, Toyota..." required>
+            <datalist id="CarMakes">
+            <option value="Mahindra">
+            <option value="Honda">
+            <option value="Hyundai">
+            <option value="Ford">
+            <option  value="Toyota">
+            <option value="Nissan">
+            </datalist><br><br>
+            <label for="model">Car Model: </label>
+            <input type="text"  name="model" placeholder="Alto, Innova.." required><br><br>
+            <label for="fueltype">Fuel Type: </label>
+            <input type="radio" id="petrol" name="fueltype" value="petrol"><label for="petrol">Petrol</label>
+            <input type="radio" id="diesel" name="fueltype" value="diesel"><label for="diesel">Diesel</label>
+            <input type="radio" id="lpg" name="fueltype" value="lpg"><label for="lpg">LPG</label>
+            <input type="radio" id="other" name="fueltype" value="other"><label for="other">Other</label><br><br>
+            <label for="km">Kilometers Ran: </label>
+            <input type="number" id="km" name="km" placeholder="km.." required><br><br>
+            <button type="submit" value="submit">Schedule an appointment</button>
+        </form>
+    </div>
+    
+</div>    
+<div class="footer">
+    <footer>
+        <hr>
+    <p>Copyright &#169; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+    
+</div>        
+</body>
+</html>
